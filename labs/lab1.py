@@ -63,7 +63,21 @@ def task6():
         else:
             print('Введите корректное значение объема')
 
-#def task7():
+def task7():
+    A1 = float(input('Введите А1 :'))
+    B1 = float(input('Введите В1 :'))
+    C1 = float(input('Введите С1 :'))
+    A2 = float(input('Введите А2 :'))
+    B2 = float(input('Введите В2 :'))
+    C2 = float(input('Введите С2 :'))
+    D = A1 * B2 - B1 * A2
+    if D == 0 :
+        print('Система не имеет решений')
+    else:
+        x = (C1 * B2 - C2 * B1) / D
+        y = (C2 * A1 - C1 * A2) / D
+        print('x = ', "{:10.4f}".format(x))
+        print('y = ', "{:10.4f}".format(y))
 
 
 def task8():
@@ -85,4 +99,4 @@ def task9():
     salary_after_tax = salary * (1 - percent)
     print('Зарплата после налога = ', "{:10.4f}".format(salary_after_tax))
 
-task8()
+task7()
